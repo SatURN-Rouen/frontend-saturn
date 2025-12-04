@@ -1,14 +1,11 @@
-import Nav from '../components/nav.tsx';
-
-import './styles/App.css'
+import './styles/Home.css'
 
 function Home() {
 
-  return (
-    <>
-      <Nav />
-    </>
-  )
+    return (
+        <>
+        </>
+    )
 }
 
 export default Home

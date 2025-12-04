@@ -1,8 +1,6 @@
-
-
 export type Profil = {
-    id : String;
-    name : String;
-    icon : Image;
-    scenarios : Scenario[];
+    id: String;
+    name: String;
+    icon: Image;
+    scenarios: Scenario[];
 }

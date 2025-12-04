@@ -1,3 +1,1 @@
-export type Image = {
-    
-}
+export type Image = {}
