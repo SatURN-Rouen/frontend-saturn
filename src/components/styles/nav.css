@@ -1,5 +1,4 @@
 .nav {
-    width: 90vw;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -14,8 +13,83 @@
     flex-direction: row;
     justify-content: start;
     align-items: center;
+    gap: 32px;
 }
 
 .nav > #left > a > img {
     height: 64px;
+}
+
+.nav > #left > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: 4px;
+}
+
+.nav > #left > div > a {
+    padding: 8px 12px;
+    border-radius: var(--radius-inf);
+    background: #FFFFFF00;
+    box-shadow: 0 0 0 0 #B986FF;
+    transition: var(--trans);
+    font-weight: 600;
+    color: inherit;
+    text-decoration: none;
+}
+
+.nav > #left > div > a:hover {
+    background: #FFFFFFFF;
+    box-shadow: 0 0 32px 0 #B986FF;
+}
+
+.nav > #right {
+    --rwidth: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+}
+
+.nav > #right > div {
+    box-sizing: border-box;
+    width: var(--rwidth);
+    height: 56px;
+    border-radius: var(--radius-inf);
+}
+
+.nav > #right:hover > div:first-of-type {
+    filter: blur(16px);
+}
+
+.nav > #right > div:first-of-type {
+    background: linear-gradient(90deg, #FFBE0B 0%, #FB5607 25%, #FF006E 50%, #8338EC 75%, #3A86FF 100%);
+    filter: blur(4px);
+    z-index: 2;
+    transition: var(--trans);
+}
+
+.nav > #right > div:nth-of-type(2) {
+    z-index: 3;
+    margin-left: calc(-1 * var(--rwidth));
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    padding: 8px 12px;
+    align-items: center;
+    gap: 8px;
+}
+
+.nav > #right > div:nth-of-type(2) > img {
+    height: 24px;
+}
+
+.nav > #right > div:nth-of-type(2) > input {
+    background: none;
+    border: none;
+    flex-grow: 1;
+    font-family: Montserrat, sans-serif;
+    font-weight: 600;
 }

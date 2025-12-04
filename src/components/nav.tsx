@@ -10,12 +10,16 @@ function Nav() {
             <div id={"linksBar"}>
                 <a href={"/scenarios"}>Scenarios</a>
                 <a href={"https://nird.forge.apps.education.fr/"}>Notre site</a>
-                <a href={"/scenarios"}>Nous contacter</a>
-                <a href={"/scenarios"}>Connexion</a>
+                <a href={"/contact"}>Nous contacter</a>
+                <a href={"/admin"}>Connexion</a>
             </div>
         </div>
         <div id={"right"}>
-
+            <div></div>
+            <div>
+                <img src="https://img.icons8.com/fluency/48/bard.png" alt="AI"/>
+                <input type={"text"} placeholder={"Avez-vous une idée en tête ? Une question ?"}/>
+            </div>
         </div>
     </nav>
   );
