@@ -1,6 +1,21 @@
 .nav {
-  width: 90vw;
-  height: 80px;
-  background-color: #FFFFFF;
-  border-radius: 16px;
+    width: 90vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #FFFFFF;
+    border-radius: 16px;
+    height: fit-content;
+    padding: 16px;
+}
+
+.nav > #left {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+}
+
+.nav > #left > a > img {
+    height: 64px;
 }
