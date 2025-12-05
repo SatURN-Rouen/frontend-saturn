@@ -1,0 +1,20 @@
+.ScenarioCard {
+    display: flex;
+    min-height: 150px;
+    padding: 8px;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: stretch;
+    border-radius: 16px;
+    box-shadow: 0 0 0 0 #CDC4FF;
+    transition: var(--trans);
+}
+
+.ScenarioCard:hover {
+    box-shadow: 0 0 32px 0 #CDC4FF;
+}
+
+.ScenarioCard > h1 {
+    color: #FFF;
+    font-size: 16px;
+}

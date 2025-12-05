@@ -1,0 +1,22 @@
+#Scenarios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    flex: 1 0 0;
+    align-self: stretch;
+}
+
+#Scenarios > h1 {
+    color: #FFF;
+    font-size: 48px;
+    font-weight: 900;
+    margin: 64px 0 0 0;
+}
+
+#Scenarios > div.scenarios {
+    display: grid;
+    grid-auto-rows: 1fr;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+}

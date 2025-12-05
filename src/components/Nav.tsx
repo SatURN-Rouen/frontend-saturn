@@ -1,17 +1,18 @@
-import "./styles/nav.css";
+import "./styles/Nav.css";
+import {NavLink} from "react-router";
 
 function Nav() {
     return (
         <nav className="nav">
             <div id={"left"}>
-                <a href={"/"}>
+                <NavLink to={"/"}>
                     <img alt={"Logo"} src={"https://nird.forge.apps.education.fr/img/logo+text206px.png"}/>
-                </a>
+                </NavLink>
                 <div id={"linksBar"}>
-                    <a href={"/scenarios"}>Scenarios</a>
+                    <NavLink to={"/scenarios"}>Scenarios</NavLink>
                     <a href={"https://nird.forge.apps.education.fr/"}>Notre site</a>
-                    <a href={"/contact"}>Nous contacter</a>
-                    <a href={"/admin"}>Connexion</a>
+                    <NavLink to={"/contact"}>Nous contacter</NavLink>
+                    <NavLink to={"/admin"}>Connexion</NavLink>
                 </div>
             </div>
             <div id={"right"}>

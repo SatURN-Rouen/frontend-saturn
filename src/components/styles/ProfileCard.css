@@ -1,0 +1,50 @@
+.ProfileCard {
+    display: flex;
+    width: 250px;
+    height: 400px;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    border-radius: 32px;
+    box-shadow: 0 0 0 0 var(--color);
+    transition: var(--trans);
+}
+
+.ProfileCard:hover {
+    box-shadow: 0 0 32px 0 var(--color);
+}
+
+.ProfileCard * {
+    margin: 0;
+    text-align: left;
+}
+
+.ProfileCard > div {
+    border-radius: 32px;
+    display: flex;
+    padding: 16px;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    flex-shrink: 0;
+    align-self: stretch;
+    background: linear-gradient(180deg, transparent, color-mix(in srgb, var(--color), transparent 50%));
+}
+
+.ProfileCard > div > h2 {
+    color: #FFF;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.ProfileCard > div > h1 {
+    text-transform: uppercase;
+    color: var(--color);
+    align-self: stretch;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
