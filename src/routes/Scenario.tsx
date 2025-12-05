@@ -3,7 +3,7 @@ import NextButton  from "../components/nextButton.tsx";
 
 import "./styles/Scenario.css";
 
-interface ScenarioProps {
+export interface ScenarioProps {
   descriptions?: string[];
   numberPage?: number;
   numberActive?: number;

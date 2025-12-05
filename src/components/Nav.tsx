@@ -17,13 +17,14 @@ function Nav() {
                     <NavLink to={"/admin"}>Connexion</NavLink>
                 </div>
             </div>
-            <div id={"right"} style={{visibility: isOnChat ? "hidden" : "visible"}}>
+            <NavLink to="/chat" id={"right"}
+                     style={{visibility: isOnChat ? "hidden" : "visible", textDecoration: "none", color: "inherit"}}>
                 <div></div>
                 <div>
                     <img src="https://img.icons8.com/fluency/48/bard.png" alt="AI"/>
-                    <input type={"text"} placeholder={"Avez-vous une idée en tête ? Une question ?"}/>
+                    <p>Avez-vous une idée en tête ? Une question ?</p>
                 </div>
-            </div>
+            </NavLink>
         </nav>
     );
 }

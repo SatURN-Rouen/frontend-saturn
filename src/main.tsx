@@ -7,6 +7,7 @@ import Nav from "./components/Nav.tsx";
 import Scenarios from "./routes/Scenarios.tsx";
 import Chat from "./routes/Chat.tsx";
 import Scenario from "./routes/Scenario.tsx";
+import Soon from "./routes/Soon.tsx";
 
 createRoot(document.getElementById('root')!).render(
     <StrictMode>
@@ -15,7 +16,9 @@ createRoot(document.getElementById('root')!).render(
             <Routes>
                 <Route path={"/"} element={<Home/>}/>
                 <Route path={"/chat"} element={<Chat/>}/>
-                <Route path={"/scenarios/:id"} element={<Scenario />}/>
+                <Route path={"/contact"} element={<Soon/>}/>
+                <Route path={"/admin"} element={<Soon/>}/>
+                <Route path={"/scenarios/:id"} element={<Scenario/>}/>
                 <Route path={"/:profile"} element={<Scenarios/>}/>
             </Routes>
         </BrowserRouter>

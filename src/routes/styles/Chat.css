@@ -1,5 +1,5 @@
 .container-chatbot {
-    margin-top: 16px;
+    margin: 16px 0 128px;
     display: flex;
     flex-direction: column;
     justify-content: start;
