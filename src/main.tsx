@@ -10,6 +10,7 @@ import Scenario from "./routes/Scenario.tsx";
 import Soon from "./routes/Soon.tsx";
 import {Login} from "./routes/Login.tsx";
 import EditScenario from './routes/EditScenario.tsx';
+import Transition from "./routes/Transition.tsx";
 
 createRoot(document.getElementById('root')!).render(
     <StrictMode>
@@ -20,6 +21,7 @@ createRoot(document.getElementById('root')!).render(
                 <Route path={"/chat"} element={<Chat/>}/>
                 <Route path={"/contact"} element={<Soon/>}/>
                 <Route path={"/admin"} element={<Soon/>}/>
+                <Route path={"/test"} element={<Transition/>}/>
                 <Route path={"/scenarios/:id"} element={<Scenario/>}/>
                 <Route path={"/:profile"} element={<Scenarios/>}/>
                 <Route path={"/login"} element={<Login/>}/>

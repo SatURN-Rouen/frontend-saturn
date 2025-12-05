@@ -27,6 +27,7 @@ function Scenarios() {
         initProfiles().then((res) => setScenarios(res))
     }, [])
 
+    // @ts-ignore
     return (
         <div id={"Scenarios"}>
             <h1>J'ai un problème</h1>

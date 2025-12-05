@@ -18,6 +18,15 @@
     padding-top: 20px;
 }
 
+.center-scenario {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+    margin: 32px auto;
+}
+
 .scenario-content {
     max-width: 600px;
     width: 100%;
