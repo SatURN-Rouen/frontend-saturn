@@ -3,10 +3,16 @@ import UserQuery from "../components/UserQuery.tsx";
 import AIQuery from "../components/AIQuery.tsx";
 import { useState, useRef, useEffect } from 'react';
 import type { KeyboardEvent } from 'react';
+import AIWaiting from "../components/AIWaiting.tsx";
 
-type itemConv = {
+/*type itemConv = {
     "user": string,
     "ai": string
+}*/
+
+interface Message {
+    role: string
+    content: string
 }
 
 function Chat() {
@@ -77,7 +83,7 @@ function Chat() {
                         )
                     ))}
                     {isLoading && (
-                        <AIQuery query="..." />
+                        <AIWaiting />
                     )}
                     <div ref={chatEndRef} />
                 </div>

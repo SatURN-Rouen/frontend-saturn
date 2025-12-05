@@ -13,6 +13,12 @@
     margin-bottom: -48px;
 }
 
+.AIWaiting > img {
+    z-index: 3;
+    height: 152px;
+    margin-bottom: -64px;
+}
+
 .AIQuery > div {
     display: flex;
     padding: 16px;
