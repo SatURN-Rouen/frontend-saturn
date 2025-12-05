@@ -1,0 +1,33 @@
+.container {
+  border: 2px solid #ccc;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: row;         
+  align-items: center;
+  justify-content: space-between; 
+  gap: 30px;                    
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+    max-width: 300px;
+}
+
+h2, p {
+  color: #FFFFFF;
+  margin: 0;
+}
+
+.false {
+  color: #FF89BC;
+  transform: rotate(-90deg);
+}
+
+.true {
+  color: #BBFFA7;
+  transform: rotate(90deg);
+}
+
+.statement {
+  flex: 1;                      
+  font-size: 18px;
+}
