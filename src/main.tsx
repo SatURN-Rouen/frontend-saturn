@@ -15,7 +15,7 @@ createRoot(document.getElementById('root')!).render(
             <Routes>
                 <Route path={"/"} element={<Home/>}/>
                 <Route path={"/chat"} element={<Chat/>}/>
-                <Route path={"/Scenario"} element={<Scenario titre="Mon PC n'est pas compatible avec Windows 11 !" question="Que feriez-vous ?" />}/>
+                <Route path={"/scenarios/:id"} element={<Scenario />}/>
                 <Route path={"/:profile"} element={<Scenarios/>}/>
             </Routes>
         </BrowserRouter>

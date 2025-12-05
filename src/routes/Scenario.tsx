@@ -12,7 +12,15 @@ interface ScenarioProps {
   question : string;
 };
 
-function Scneario({numberPage : number = 6, numberActive = 2, nextButton = false, descriptions = [], titre, question}: ScenarioProps) {
+function Scneario() {
+
+    const descriptions = ["Lorem ipsum dolor sit amet, incididunt proident pariatur velit et eiusmod anim nostrud. Cupidatat ipsum nulla id. Est adipiscing nulla velit nulla aliquip. Laboris id dolore cillum. Ipsum cupidatat irure duis ex sed. Consequat proident aute eu. Incididunt dolore reprehenderit sed velit, eu anim lorem excepteur incididunt. Nisi sit ea minim. Ex laborum sit ad aliquip consequat, consectetur veniam magna pariatur esse veniam officia."]
+    const numberPage = 3;
+    const numberActive= 1;
+    const nextButton= true;
+    const titre ="“Mon PC n’est pas compatible avec Windows 11 !”";
+    const question = "Que feriez-vous ?";
+
   return (
     <div className="container-scenario">
       <div className="group-scenario">
@@ -67,7 +75,7 @@ function Scneario({numberPage : number = 6, numberActive = 2, nextButton = false
     </div>
         <div className="carousel-dots">
         {
-          Array.from({ length: number }).map((_, index) => (
+          Array.from({ length: numberPage }).map((_, index) => (
             <span
               key={index}
               className={`dot ${index === numberActive ? 'active' : ''}`}
