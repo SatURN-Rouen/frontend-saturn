@@ -1,0 +1,41 @@
+.AIQuery {
+    margin-top: -64px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    align-self: stretch;
+}
+
+.AIQuery > img {
+    z-index: 3;
+    height: 128px;
+    margin-bottom: -48px;
+}
+
+.AIQuery > div {
+    display: flex;
+    padding: 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 16px;
+    background: #764185;
+    box-shadow: 0 0 16px 0 #D386FF80;
+    transition: var(--trans);
+}
+
+.AIQuery > div:hover {
+    box-shadow: 0 0 32px 0 #D386FF80;
+}
+
+
+.AIQuery > div > p {
+    text-align: left;
+    width: 500px;
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}

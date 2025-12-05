@@ -19,5 +19,5 @@ createRoot(document.getElementById('root')!).render(
                 <Route path={"/:profile"} element={<Scenarios/>}/>
             </Routes>
         </BrowserRouter>
-    </StrictMode>,
+    </StrictMode>
 )
