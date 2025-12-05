@@ -1,7 +1,9 @@
 import ResponseChoiceProps from "../components/responseChoice.tsx";
 import NextButton  from "../components/nextButton.tsx";
+import JsonScenarios from "../assets/Scenarii_SatURN.json"
 
 import "./styles/Scenario.css";
+import {useParams} from "react-router";
 
 export interface ScenarioProps {
   descriptions?: string[];
@@ -12,14 +14,25 @@ export interface ScenarioProps {
   question : string;
 };
 
+interface JsonScenario {
+    img: string;
+    url: string;
+    title: string;
+    content: string;
+}
+
 function Scneario() {
 
-    const descriptions = ["Lorem ipsum dolor sit amet, incididunt proident pariatur velit et eiusmod anim nostrud. Cupidatat ipsum nulla id. Est adipiscing nulla velit nulla aliquip. Laboris id dolore cillum. Ipsum cupidatat irure duis ex sed. Consequat proident aute eu. Incididunt dolore reprehenderit sed velit, eu anim lorem excepteur incididunt. Nisi sit ea minim. Ex laborum sit ad aliquip consequat, consectetur veniam magna pariatur esse veniam officia."]
+    const $scenarios = JsonScenarios as JsonScenario[]
+    const $params = useParams()
+    const index = Number($params["id"])
+
+    const descriptions = [$scenarios[index].content]
     const numberPage = 3;
     const numberActive= 1;
     const nextButton= true;
-    const titre ="“Mon PC n’est pas compatible avec Windows 11 !”";
-    const question = "Que feriez-vous ?";
+    const titre = $scenarios[index].title
+    const question = ""
 
   return (
     <div className="container-scenario">
