@@ -6,6 +6,11 @@
     border-radius: 16px;
     height: fit-content;
     padding: 16px;
+    position: sticky;
+    top: 16px;
+    left: 16px;
+    right: 16px;
+    z-index: 5;
 }
 
 .nav > #left {
