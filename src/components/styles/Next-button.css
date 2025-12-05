@@ -1,0 +1,17 @@
+.next-button {
+  display: flex;
+  padding: 16px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 40px;
+  background: #DEC6FF;
+  box-shadow: 0 0 32px 0 #B986FF;
+  border: none;
+}
+.next-button:hover {
+  background: #CFA1FF;
+  box-shadow: 0 0 48px 0 #A060FF;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
