@@ -1,4 +1,4 @@
 export type Image = {
-    path : String;
-    desc : String;
+    path : string;
+    description : string;
 }

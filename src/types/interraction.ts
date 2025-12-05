@@ -4,20 +4,24 @@ import type { QuizzReponses } from "./quizzReponse";
 import type { Affirmation } from "./stf";
 
 export type Interraction =  {
+    id : String;
     type : "QCM";
-    question : String;
+    question : string;
     reponses : QuizzReponses[];
 } |
 {
+    id : String;
     type : "CTD";
     connects : ConnectTheDot[];
 } |
 {
+    id : String;
     type : "STF";
-    nextURL : String;
+    nextURL : string;
     affirmations : Affirmation[];
 } |
 {
+    id : String;
     type : "Card";
     cards : Card[];
 }

@@ -1,5 +1,9 @@
 .container-chatbot {
+<<<<<<< HEAD
     margin-top: 16px;
+=======
+    margin: 16px 0 128px;
+>>>>>>> d29e0b14fa86d94914195bedd66e5bda91d02d50
     display: flex;
     flex-direction: column;
     justify-content: start;

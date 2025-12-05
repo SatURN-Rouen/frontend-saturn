@@ -1,4 +1,5 @@
+import { getProfiles } from "../services/profileService";
 
-export function createProfile() {
-    
+export async function getProfilesUI() {
+    return await getProfiles();
 }

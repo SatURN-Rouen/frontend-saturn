@@ -1,4 +1,4 @@
 export type ConnectTheDot = {
-    gauche : String;
-    droite : String;
+    gauche : string;
+    droite : string;
 }

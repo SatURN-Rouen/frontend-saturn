@@ -2,8 +2,8 @@ import type { Image } from "./image";
 import type { Scenario } from "./scenario";
 
 export type Profil = {
-    id: String;
-    name: String;
-    icon: Image;
+    id: string;
+    name: string;
+    image: Image;
     scenarios: Scenario[];
 }

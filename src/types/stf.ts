@@ -1,4 +1,4 @@
 export type Affirmation = {
-    texte : String;
+    texte : string;
     valid : boolean;
 }

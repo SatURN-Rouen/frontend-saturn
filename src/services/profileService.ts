@@ -3,7 +3,8 @@ import type { Profil } from "../types/profil";
 
 
 
-export function getProfiles() : Promise<Profil[]>{
-    return axios.get("/api/v1/profils");
+export async function getProfiles() : Promise<Profil[]>{
+    const res = await axios.get<Profil[]>("/api/v1/profils");
+    return res.data;
 }
 

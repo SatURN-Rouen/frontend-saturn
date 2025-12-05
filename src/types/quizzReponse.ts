@@ -1,4 +1,4 @@
 export type QuizzReponses = {
-    texte : String;
-    nextURL : String;
+    texte : string;
+    nextURL : string;
 }

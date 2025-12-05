@@ -1,5 +1,6 @@
 export type Scenario = {
-    id : String;
-    title : String;
-    urlRootScene : String;  
+    id : string;
+    title : string;
+    urlRootScene : string; 
+    description : string;
 }

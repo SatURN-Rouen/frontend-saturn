@@ -6,6 +6,11 @@
     border-radius: 16px;
     height: fit-content;
     padding: 16px;
+    position: sticky;
+    top: 16px;
+    left: 16px;
+    right: 16px;
+    z-index: 5;
 }
 
 .nav > #left {
@@ -55,6 +60,7 @@
     flex-direction: row;
     justify-content: start;
     align-items: center;
+    transition: var(--trans);
 }
 
 .nav > #right > div {
@@ -67,6 +73,12 @@
 .nav > #right:hover > div:first-of-type {
     filter: blur(16px);
 }
+
+.nav > #right:active {
+    scale: 0.9;
+    opacity: 0.5;
+}
+
 
 .nav > #right > div:first-of-type {
     background: linear-gradient(90deg, #FFBE0B 0%, #FB5607 25%, #FF006E 50%, #8338EC 75%, #3A86FF 100%);
@@ -91,12 +103,9 @@
     height: 24px;
 }
 
-.nav > #right > div:nth-of-type(2) > input {
-    background: none;
-    border: none;
-    flex-grow: 1;
-    font-family: Montserrat, sans-serif;
+.nav > #right > div:nth-of-type(2) > p {
     font-weight: 600;
-    height: 100%;
+    font-size: 14px;
+    opacity: 0.5;
     border-radius: var(--radius-inf);
 }
