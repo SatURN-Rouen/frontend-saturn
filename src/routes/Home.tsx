@@ -5,7 +5,7 @@ import {useEffect, useState} from "react";
 
 function Home() {
 
-    const [profiles, setProfiles] = useState([])
+    /*const [profiles, setProfiles] = useState([])
 
 
     useEffect(() => {
@@ -18,7 +18,7 @@ function Home() {
 
         // @ts-ignore
         initProfiles().then((res) => setProfiles(res))
-    }, [])
+    }, [])*/
 
     return (
         <div id={"Home"}>
@@ -30,7 +30,10 @@ function Home() {
                     aider.</p>
             </div>
             <div className={"profiles"}>
-                {profiles}
+                <ProfileCard img={"/etudiant.png"} name={"Étudiant·e"} url={"/etudiant"}/>
+                <ProfileCard img={"/collectivite.png"} name={"une collectivité"} url={"/collective"}/>
+                <ProfileCard img={"/particulier.png"} name={"Particulier"} url={"/particulier"}/>
+                <ProfileCard img={"/patron.png"} name={"Patron"} url={"/boss"}/>
             </div>
         </div>
     )
