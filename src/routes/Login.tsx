@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
-import { Box, TextField, Button, Typography } from '@mui/material';
-import usersData from '../data/users.json';
-import { useNavigate } from 'react-router';  // Import de useNavigate
+import React, {useState} from 'react';
+import {Box, TextField, Button, Typography} from '@mui/material';
+import {useNavigate} from 'react-router';
+import {AuthService} from "../services/authService.ts";  // Import de useNavigate
 
 export const Login: React.FC = () => {
     const [email, setEmail] = useState('');
@@ -10,29 +10,24 @@ export const Login: React.FC = () => {
     const [error, setError] = useState('');
     const navigate = useNavigate();  // Hook de navigation
 
-    const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    setError('');
-    setLoading(true);
+    const handleSubmit = async (e: React.FormEvent) => {
+        e.preventDefault();
+        setError('');
+        setLoading(true);
 
-    const user = usersData.users.find(
-        (u) => u.email === email && u.password === password
-    );
 
-    if (!user) {
-        setError("Email ou mot de passe incorrect.");
+        const authLogin = new AuthService(email, password)
+        await authLogin.authenticate()
+        const token = authLogin.getToken()
+        if (!token) {
+            setError("Email ou mot de passe incorrect.");
+            setLoading(false);
+            return;
+        }
+        localStorage.setItem("token", token)
         setLoading(false);
-        return;
-    }
-
-    console.log("SUCCESS → User:", user);
-
-    // Enregistrer l'utilisateur comme connecté dans le localStorage
-    localStorage.setItem("isLoggedIn", "true");
-
-    setLoading(false);
-    navigate('/edit-scenario');
-};
+        navigate('/edit-scenario');
+    };
 
 
     return (
@@ -58,7 +53,7 @@ export const Login: React.FC = () => {
                 borderRadius={2}
                 boxShadow={3}
             >
-                <Typography variant="h4" align="center" marginBottom={2} sx={{ color: "#F67FCA" }}>
+                <Typography variant="h4" align="center" marginBottom={2} sx={{color: "#F67FCA"}}>
                     Sign In
                 </Typography>
 
@@ -70,14 +65,14 @@ export const Login: React.FC = () => {
 
                 <TextField
                     label="Email"
-                    type="email"
+                    type="text"
                     variant="outlined"
                     fullWidth
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     required
                     margin="normal"
-                    sx={{ borderRadius: 2 }}  
+                    sx={{borderRadius: 2}}
                 />
 
                 <TextField
@@ -89,7 +84,7 @@ export const Login: React.FC = () => {
                     onChange={(e) => setPassword(e.target.value)}
                     required
                     margin="normal"
-                    sx={{ borderRadius: 2 }}  
+                    sx={{borderRadius: 2}}
                 />
 
                 <Button
@@ -97,9 +92,9 @@ export const Login: React.FC = () => {
                     variant="contained"
                     fullWidth
                     disabled={loading}
-                    sx={{ marginTop: 2, borderRadius: 12, bgcolor: "#F67FCA" }}
+                    sx={{marginTop: 2, borderRadius: 12, bgcolor: "#F67FCA"}}
                 >
-                    <Typography sx={{ marginLeft: 1 }}>Se connecter</Typography>
+                    <Typography sx={{marginLeft: 1}}>Se connecter</Typography>
                 </Button>
             </Box>
         </Box>
