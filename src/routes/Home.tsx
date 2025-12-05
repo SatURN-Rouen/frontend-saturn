@@ -1,7 +1,24 @@
 import './styles/Home.css'
 import ProfileCard from "../components/ProfileCard.tsx";
+import {getProfiles} from "../services/profileService.ts";
+import {useEffect, useState} from "react";
 
 function Home() {
+
+    const [profiles, setProfiles] = useState([])
+
+
+    useEffect(() => {
+        const initProfiles = async () => {
+            const profileService = await getProfiles()
+            return Array.from(profileService, (e) => (
+                <ProfileCard img={e.image.path} name={e.name} url={`/${e.name}`}/>
+            ))
+        }
+
+        // @ts-ignore
+        initProfiles().then((res) => setProfiles(res))
+    }, [])
 
     return (
         <div id={"Home"}>
@@ -13,10 +30,7 @@ function Home() {
                     aider.</p>
             </div>
             <div className={"profiles"}>
-                <ProfileCard img="/profiles/case4.png" name="Un harang" url="/individual"/>
-                <ProfileCard img="/profiles/case3.png" name="Un harang" url="/collective"/>
-                <ProfileCard img="/profiles/case2.png" name="Un harang" url="/boss"/>
-                <ProfileCard img="/profiles/case1.png" name="Un harang" url="/student"/>
+                {profiles}
             </div>
         </div>
     )
