@@ -1,3 +1,5 @@
+import ResponseChoiceProps from "../components/responseChoice.tsx";
+
 import "./styles/Scenario.css";
 
 interface ScenarioProps {
@@ -11,12 +13,12 @@ function Scneario({numberPage : number = 6, numberActive = 2}: ScenarioProps) {
       <div className="group-scenario">
       <div className="left-scenario">
         <div className="scenario-content">
-          <img src="./back.png" className="scenario-image" alt="Keyboard" />
+          <img src="/back.png" className="scenario-image" alt="Keyboard" />
           <div className="text-scenario">
             <h3>"Mon PC n'est pas compatible avec Windows 11 !"</h3>
             <div className="scenario-icons">
-              <img src="./Share.svg" alt="Share" />
-              <img src="./Copy.svg" alt="Copy" />
+              <img src="/Share.svg" alt="Share" />
+              <img src="/Copy.svg" alt="Copy" />
             </div>
           </div>
           <div className="scenario-description">
@@ -32,22 +34,11 @@ function Scneario({numberPage : number = 6, numberActive = 2}: ScenarioProps) {
           <h2>Choisissez une réponse</h2>
         </div>
         
-        <div className="options-container">
-          <div className="option-card">
-            <span className="option-number">1.</span>
-            <p>Je jette mon ancien PC et en rachette un nouveau</p>
-          </div>
-          
-          <div className="option-card">
-            <span className="option-number">2.</span>
-            <p>Je trouve un PC sur un service de seconde main</p>
-          </div>
-          
-          <div className="option-card">
-            <span className="option-number">3.</span>
-            <p>Je garde mon ancien PC et installe un autre OS</p>
-          </div>
-        </div>
+        <ResponseChoiceProps question={[
+          "Réponse 1: Lorem ipsum dolor sit amet, incididunt proident pariatur velit et eiusmod anim nostrud.",
+          "Réponse 2: Lorem ipsum dolor sit amet, incididunt proident pariatur velit et eiusmod anim nostrud.",
+          "Réponse 3: Lorem ipsum dolor sit amet, incididunt proident pariatur velit et eiusmod anim nostrud.",
+        ]} />
         
       </div>
 
