@@ -1,8 +1,6 @@
 import './styles/Chat.css'
 import UserQuery from "../components/UserQuery.tsx";
 import AIQuery from "../components/AIQuery.tsx";
-<<<<<<< HEAD
-=======
 import { useState, useRef, useEffect } from 'react';
 import type { KeyboardEvent } from 'react';
 
@@ -10,7 +8,6 @@ type itemConv = {
     "user": string,
     "ai": string
 }
->>>>>>> d29e0b14fa86d94914195bedd66e5bda91d02d50
 
 function Chat() {
     const [conversation, setConversation] = useState<Message[]>([]);
@@ -18,8 +15,6 @@ function Chat() {
     const [isLoading, setIsLoading] = useState(false);
     const chatEndRef = useRef<HTMLDivElement>(null);
 
-<<<<<<< HEAD
-=======
     // Scroll automatique vers le bas
     useEffect(() => {
         chatEndRef.current?.scrollIntoView({ behavior: "smooth" });
@@ -70,17 +65,10 @@ function Chat() {
         }
     };
 
->>>>>>> d29e0b14fa86d94914195bedd66e5bda91d02d50
     return (
         <>
             <div className='container-chatbot'>
                 <div>
-<<<<<<< HEAD
-                    <UserQuery
-                        query={"Lorem ipsum dolor sit amet, do duis nostrud reprehenderit, laborum pariatur tempor elit laborum."}/>
-                    <AIQuery
-                        query={"Lorem ipsum dolor sit amet, do duis nostrud reprehenderit, laborum pariatur tempor elit laborum."}/>
-=======
                     {conversation.map((item, index) => (
                         item.role === 'user' ? (
                             <UserQuery key={index} query={item.content} />
@@ -92,19 +80,12 @@ function Chat() {
                         <AIQuery query="..." />
                     )}
                     <div ref={chatEndRef} />
->>>>>>> d29e0b14fa86d94914195bedd66e5bda91d02d50
                 </div>
             </div>
             <div className="chat-container">
                 <div>
                 </div>
                 <div>
-<<<<<<< HEAD
-                    <img src="https://img.icons8.com/fluency/48/bard.png" alt="AI"/>
-                    <input type={"text"} placeholder={"Avez-vous une idée en tête ? Une question ?"}/>
-                    <button>
-                        <img src="https://img.icons8.com/FFFFFF/sf-black-filled/64/sent.png" alt="sent"/>
-=======
                     <img src="https://img.icons8.com/fluency/48/bard.png" alt="AI" />
                     <input
                         type="text"
@@ -116,7 +97,6 @@ function Chat() {
                     />
                     <button onClick={handleSendMessage} disabled={isLoading}>
                         <img src="https://img.icons8.com/FFFFFF/sf-black-filled/64/sent.png" alt="sent" />
->>>>>>> d29e0b14fa86d94914195bedd66e5bda91d02d50
                     </button>
                 </div>
             </div>
