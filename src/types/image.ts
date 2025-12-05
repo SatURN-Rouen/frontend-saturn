@@ -1,1 +1,4 @@
-export type Image = {}
+export type Image = {
+    path : String;
+    desc : String;
+}
