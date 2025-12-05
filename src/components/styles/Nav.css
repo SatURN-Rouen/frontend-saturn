@@ -44,6 +44,11 @@
     box-shadow: 0 0 32px 0 #B986FF;
 }
 
+.nav > #left > div > a:active {
+    scale: 0.9;
+    opacity: 0.5;
+}
+
 .nav > #right {
     --rwidth: 400px;
     display: flex;

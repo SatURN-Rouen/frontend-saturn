@@ -1,7 +1,9 @@
 import "./styles/Nav.css";
-import {NavLink} from "react-router";
+import {NavLink, useLocation} from "react-router";
 
 function Nav() {
+
+    const isOnChat = useLocation().pathname.split("/").includes("chat")
     return (
         <nav className="nav">
             <div id={"left"}>
@@ -15,7 +17,7 @@ function Nav() {
                     <NavLink to={"/admin"}>Connexion</NavLink>
                 </div>
             </div>
-            <div id={"right"}>
+            <div id={"right"} style={{visibility: isOnChat ? "hidden" : "visible"}}>
                 <div></div>
                 <div>
                     <img src="https://img.icons8.com/fluency/48/bard.png" alt="AI"/>
