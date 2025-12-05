@@ -1,0 +1,134 @@
+[
+  {
+    "img": "https://source.unsplash.com/featured/?linux,computer",
+    "url": "",
+    "title": "Systèmes libres sur ordinateurs, tablettes et smartphones",
+    "content": "L’objectif de ce scénario est de réduire la dépendance aux systèmes propriétaires comme Windows, Android ou iOS afin de lutter contre l’obsolescence logicielle. Les systèmes libres permettent d’allonger la durée de vie des appareils en restant performants même sur du matériel ancien, évitant ainsi le renouvellement imposé par les éditeurs. Cela constitue un levier puissant pour une informatique plus durable et accessible.\n\nAdopter des systèmes libres, c’est aussi offrir aux élèves et utilisateurs une véritable culture numérique, fondée sur la transparence, l’ouverture et la modification possible du code. Cette démarche contribue à une plus grande autonomie technologique, tout en limitant les risques liés au verrouillage matériel et au manque de compatibilité."
+  },
+  {
+    "img": "https://source.unsplash.com/featured/?office,documents",
+    "url": "",
+    "title": "Bureautique libre pour élèves, étudiants et enseignants",
+    "content": "Les outils bureautiques libres permettent d’accéder gratuitement à un ensemble complet de fonctionnalités adaptées au travail scolaire, universitaire ou personnel. Ils éliminent le besoin d'abonnements coûteux tout en offrant une large compatibilité entre plateformes. Cela garantit une égalité d’accès pour tous les publics, quels que soient leurs moyens financiers ou leurs appareils.\n\nAdopter une suite bureautique libre, c’est également sortir du cycle des formats propriétaires. Cela favorise un écosystème où les documents restent ouverts, pérennes et facilement partageables, limitant les risques d’incompatibilité à long terme. Le défi reste d’accompagner les utilisateurs dans la transition afin de dépasser les habitudes liées aux solutions dominantes."
+  },
+  {
+    "img": "https://source.unsplash.com/featured/?refurbished,laptop",
+    "url": "",
+    "title": "Reconditionnement pour l’équipement des élèves",
+    "content": "Le reconditionnement permet aux élèves, étudiants et familles de s’équiper à faible coût tout en bénéficiant de matériel de qualité. Cette solution lutte contre la fracture numérique en rendant accessible l’informatique aux publics qui n’auraient pas les moyens d’acheter du neuf. En parallèle, elle contribue à réduire les déchets électroniques, un enjeu environnemental majeur.\n\nBien qu’encore victime de préjugés sur sa fiabilité, le matériel reconditionné peut offrir les mêmes usages que des appareils neufs. Favoriser cette filière revient à encourager une économie circulaire locale, réduisant l’impact écologique et soutenant des pratiques plus responsables."
+  },
+  {
+    "img": "https://source.unsplash.com/featured/?privacy,data",
+    "url": "",
+    "title": "Souveraineté des données des élèves et des familles",
+    "content": "Ce scénario vise à garantir que les données personnelles des élèves, parents et enseignants soient protégées, quel que soit l’outil utilisé. Avec l’augmentation des ENT, applications éducatives et services en ligne, la maîtrise de ces données est devenue essentielle. Le respect du RGPD impose des obligations fortes que les institutions doivent pouvoir assumer.\n\nRenforcer la souveraineté numérique revient à réduire la dépendance aux infrastructures hébergées par les géants du numérique. Cela implique de migrer vers des solutions maîtrisées, plus locales et plus transparentes. Les défis sont importants — coûts, compétences techniques, contraintes juridiques — mais essentiels pour conserver le contrôle sur des informations sensibles."
+  },
+  {
+    "img": "https://source.unsplash.com/featured/?smartphone,communication",
+    "url": "",
+    "title": "Messageries et communications scolaires sur mobiles",
+    "content": "Les échanges scolaires se font aujourd’hui majoritairement via des outils privés comme WhatsApp, Messenger ou Gmail, dont les modèles économiques reposent souvent sur la collecte de données. Ce scénario propose de les remplacer par des solutions souveraines, pensées pour la confidentialité et adaptées aux usages éducatifs, sur smartphone comme sur ordinateur.\n\nDéployer des messageries sécurisées et contrôlées par les institutions permet de protéger les métadonnées, limiter le traçage et garantir la confidentialité des échanges. Le principal défi réside dans les habitudes installées : convaincre les utilisateurs de changer leurs pratiques nécessite de la pédagogie et un effort collectif."
+  },
+  {
+    "img": "https://source.unsplash.com/featured/?video,education",
+    "url": "",
+    "title": "Plateformes vidéo éducatives libres pour tous",
+    "content": "La vidéo est devenue un outil central pour l’apprentissage, mais les plateformes dominantes reposent sur la publicité, le profilage et l’analyse du comportement des utilisateurs. Les alternatives libres offrent un hébergement local possible, sans publicité ni surveillance algorithmique. Elles permettent également une meilleure gestion des droits et de la diffusion.\n\nAdopter une plateforme éducative libre, c’est renforcer la protection des données de visionnage tout en offrant un espace adapté à la pédagogie. Le défi est d’en faire connaître l’existence : leurs performances et leur notoriété sont encore inférieures à celles des géants du web, ce qui freine leur adoption."
+  },
+  {
+    "img": "https://source.unsplash.com/featured/?accessibility,education",
+    "url": "",
+    "title": "Accessibilité numérique sur tous les supports",
+    "content": "Assurer l’accessibilité des outils numériques permet à tous les élèves, y compris ceux en situation de handicap, d’utiliser les ressources pédagogiques dans de bonnes conditions. Cela inclut l’adaptation aux troubles DYS, aux déficiences visuelles ou auditives, et aux besoins particuliers liés à l’apprentissage.\n\nL’accessibilité numérique est une obligation légale, mais encore trop souvent ignorée par manque de moyens ou de formation. Concevoir des outils inclusifs nécessite une attention à l’ergonomie, aux formats et à la compatibilité, afin d’éviter que certains élèves ne soient exclus malgré la volonté d’innover."
+  },
+  {
+    "img": "https://source.unsplash.com/featured/?ecology,technology",
+    "url": "",
+    "title": "Sobriété numérique des usages élèves et étudiants",
+    "content": "La sobriété numérique encourage des pratiques plus respectueuses de l’environnement, en particulier face à la croissance du streaming, du stockage cloud et des réseaux sociaux. Comprendre l’impact carbone du numérique permet aux étudiants d’adopter des comportements plus responsables, tout en améliorant la performance et la longévité de leurs appareils.\n\nCet effort passe par une sensibilisation des jeunes, souvent mal informés des dépenses énergétiques réelles du numérique. Réduire les usages superflus, privilégier le stockage local ou limiter la vidéo en haute définition peut avoir un impact significatif sur les ressources consommées."
+  },
+  {
+    "img": "https://source.unsplash.com/featured/?smartphone,apps",
+    "url": "",
+    "title": "Dépendance aux stores d’applications sur smartphones",
+    "content": "Ce scénario met en lumière la dépendance aux stores dominants comme Google Play et l’App Store, qui contrôlent non seulement la distribution des applications, mais aussi leurs règles et leur accès. Cette situation limite la diversité des outils éducatifs et impose des restrictions parfois contraires à l’intérêt des utilisateurs.\n\nPromouvoir des alternatives et encourager l'accès à des dépôts d’applications plus ouverts permet d’augmenter la transparence, d'améliorer la protection de la vie privée et de réduire la dépendance à deux grandes entreprises. Cela implique toutefois de sensibiliser les utilisateurs aux risques perçus et aux garanties réelles."
+  },
+  {
+    "img": "https://source.unsplash.com/featured/?school,platform",
+    "url": "",
+    "title": "Plateformes de travail et de gestion scolaires libres",
+    "content": "Les plateformes de gestion scolaire privées collectent et gèrent des données très sensibles : notes, informations familiales, comportements, échanges entre enseignants et élèves. Passer à des solutions libres permet de s’assurer que ces informations ne sont ni exploitées commercialement ni inaccessibles en cas de changement d’éditeur.\n\nEn favorisant la maîtrise publique et l’interopérabilité, les établissements gagnent en indépendance et en transparence. Les obstacles restent cependant importants : intégration technique complexe, manque de solutions clé en main et peur du changement chez les utilisateurs."
+  },
+  {
+    "img": "https://source.unsplash.com/featured/?maps,navigation",
+    "url": "",
+    "title": "Cartographie, recherche et usages numériques alternatifs",
+    "content": "La recherche d'information et la cartographie sont aujourd’hui dominées par quelques services commerciaux qui collectent massivement des données personnelles. Encourager l’utilisation d’alternatives comme Qwant, DuckDuckGo ou OpenStreetMap permet de réduire ce traçage tout en développant l’esprit critique des utilisateurs.\n\nCes outils offrent une diversité de sources et une meilleure protection de la vie privée, mais leur adoption nécessite de dépasser les habitudes imposées par les réglages par défaut. L’enjeu est aussi pédagogique : apprendre aux élèves à comprendre comment fonctionne l’économie des services numériques."
+  },
+  {
+    "img": "https://source.unsplash.com/featured/?education,training",
+    "url": "",
+    "title": "Formation massive au numérique libre",
+    "content": "Le numérique libre constitue un socle essentiel pour développer l’autonomie, l’esprit critique et la compréhension des enjeux numériques actuels. Former élèves, étudiants et enseignants à ces outils permet d’acquérir des compétences transférables dans le monde professionnel.\n\nLa difficulté réside dans le manque de temps, de formateurs spécialisés et de reconnaissance institutionnelle. Pourtant, investir dans cette formation représente un atout stratégique pour préparer les générations futures à un numérique maîtrisé, durable et éthique."
+  },
+  {
+    "img": "https://source.unsplash.com/featured/?student,privacy",
+    "url": "",
+    "title": "Protéger sa vie privée en tant qu’étudiant",
+    "content": "Les étudiants utilisent quotidiennement des applications, plateformes et services en ligne qui collectent des données personnelles parfois très sensibles : navigation, localisation, communications ou données scolaires. Comprendre ces enjeux est indispensable pour conserver le contrôle sur sa vie numérique.\n\nL’usage d’outils libres et transparents permet de limiter le traçage et de mieux maîtriser son identité numérique. Sensibiliser les étudiants à ces pratiques contribue à les protéger durablement, alors que les traces laissées en ligne peuvent avoir un impact sur leur vie future."
+  },
+  {
+    "img": "https://source.unsplash.com/featured/?student,laptop",
+    "url": "",
+    "title": "Étudier sans payer d’abonnements",
+    "content": "Les étudiants sont souvent confrontés à des logiciels ou services payants nécessaires pour leurs études. Cela crée des inégalités importantes entre ceux qui peuvent se permettre ces dépenses et les autres. Favoriser les solutions libres ou gratuites permet d’assurer un accès égal aux outils fondamentaux.\n\nCette approche réduit aussi le poids financier des études, déjà coûteuses. Elle contribue à une meilleure autonomie numérique, en donnant aux étudiants des alternatives viables aux services propriétaires qui enferment l’utilisateur dans des abonnements récurrents."
+  },
+  {
+    "img": "https://source.unsplash.com/featured/?opensource,customization",
+    "url": "",
+    "title": "Garder le contrôle sur ses outils",
+    "content": "Le contrôle de ses outils numériques est essentiel pour éviter la dépendance aux grandes entreprises technologiques. Les logiciels libres offrent la possibilité d'adapter, modifier et partager des programmes sans restriction, ce qui renforce la liberté de l’utilisateur.\n\nAdopter cette philosophie permet d’expérimenter, personnaliser et comprendre les technologies utilisées au quotidien. Pour un étudiant, cette autonomie peut devenir un véritable atout, tant dans ses études que dans sa future carrière."
+  },
+  {
+    "img": "https://source.unsplash.com/featured/?oldcomputer,linux",
+    "url": "",
+    "title": "Faire durer son ordinateur plus longtemps",
+    "content": "L’obsolescence logicielle oblige souvent à remplacer des appareils encore fonctionnels. Installer un système libre comme Linux permet de prolonger la vie d’un ordinateur, même ancien, en améliorant ses performances et en contournant les limitations imposées par certains éditeurs.\n\nLe reconditionnement constitue également une alternative intéressante pour donner une seconde vie au matériel. Faire durer son ordinateur permet de réduire l’impact écologique, d’économiser de l’argent et de lutter contre le gaspillage numérique."
+  },
+  {
+    "img": "https://source.unsplash.com/featured/?skills,career",
+    "url": "",
+    "title": "Développer des compétences utiles pour les études et l’emploi",
+    "content": "Apprendre à utiliser des logiciels libres, comprendre le fonctionnement des réseaux ou s’initier à la cybersécurité sont des compétences très recherchées dans l’enseignement supérieur et le monde professionnel. Le numérique libre occupe une part importante de l’infrastructure informatique mondiale, notamment dans les serveurs.\n\nSe former à ces technologies offre un avantage sur un CV et ouvre de nombreuses opportunités. Cela encourage aussi une meilleure compréhension de l’architecture du numérique moderne et des enjeux de sécurité qui concernent désormais toutes les organisations."
+  },
+  {
+    "img": "https://source.unsplash.com/featured/?pme,budget",
+    "url": "",
+    "title": "Réduction des coûts logiciels dans une PME",
+    "content": "Les PME font face à une augmentation constante des coûts liés aux abonnements logiciels. Les solutions libres permettent d’éliminer ces dépenses récurrentes et de mieux maîtriser le budget. Elles facilitent également une stratégie informatique durable et prévisible.\n\nEn choisissant des alternatives libres, les entreprises gagnent en autonomie et évitent les situations de dépendance économique vis-à-vis d’un éditeur unique. Cela peut représenter un changement stratégique majeur pour leur stabilité financière."
+  },
+  {
+    "img": "https://source.unsplash.com/featured/?security,data",
+    "url": "",
+    "title": "Protection des données et conformité réglementaire",
+    "content": "Les PME manipulent des données sensibles concernant leurs clients, fournisseurs ou salariés. La conformité au RGPD n’est pas une option : elle protège l’entreprise contre des risques juridiques et financiers. Les outils libres permettent souvent une meilleure maîtrise de la chaîne technique et des données hébergées.\n\nComprendre que les PME sont des cibles régulières des cyberattaques est essentiel. Renforcer la sécurité passe par des pratiques adaptées et par l’utilisation de solutions transparentes, moins susceptibles d’exposer les données à des tiers non souhaités."
+  },
+  {
+    "img": "https://source.unsplash.com/featured/?technology,freedom",
+    "url": "",
+    "title": "Indépendance technologique de la PME",
+    "content": "L’indépendance technologique permet à une PME de ne pas être enfermée dans les choix d’un seul fournisseur. Les logiciels libres favorisent cette liberté en offrant du code accessible, modifiable et interopérable. Cela renforce la capacité à changer de prestataire ou à adapter les outils en interne.\n\nCette approche améliore la négociation des contrats, évite le verrouillage technologique et limite les coûts liés à la dépendance. En maîtrisant mieux ses formats et outils, l’entreprise gagne en flexibilité et en résilience."
+  },
+  {
+    "img": "https://source.unsplash.com/featured/?hardware,lifecycle",
+    "url": "",
+    "title": "Allongement de la durée de vie du matériel",
+    "content": "Le renouvellement informatique représente une grande dépense pour les PME. Installer un système libre sur un PC ancien ou passer par le reconditionnement peut prolonger sa durée d’usage, tout en maintenant un bon niveau de performance. Cela réduit considérablement les coûts.\n\nAu-delà de l’économie, cette approche limite la production de déchets électroniques et l’impact écologique associé. Allonger la durée de vie du matériel s’inscrit dans une démarche durable, bénéfique pour l’entreprise comme pour l’environnement."
+  },
+  {
+    "img": "https://source.unsplash.com/featured/?cybersecurity,network",
+    "url": "",
+    "title": "Sécurité et continuité d’activité",
+    "content": "La sécurité informatique est cruciale pour éviter les pertes de données, les interruptions d’activité ou les attaques par ransomware. Les PME sont particulièrement vulnérables, car elles disposent souvent de ressources limitées pour se protéger efficacement. Les logiciels libres offrent des mises à jour de sécurité régulières et permettent un contrôle direct des systèmes.\n\nAssurer la continuité d’activité nécessite une stratégie comprenant sauvegardes, outils fiables et bonnes pratiques de cybersécurité. L’objectif est de réduire les risques tout en maintenant un fonctionnement stable et résilient face aux menaces extérieures."
+  }
+]
