@@ -4,6 +4,7 @@ import AIQuery from "../components/AIQuery.tsx";
 <<<<<<< HEAD
 =======
 import { useState, useRef, useEffect } from 'react';
+import type { KeyboardEvent } from 'react';
 
 type itemConv = {
     "user": string,
@@ -12,7 +13,7 @@ type itemConv = {
 >>>>>>> d29e0b14fa86d94914195bedd66e5bda91d02d50
 
 function Chat() {
-    const [conversation, setConversation] = useState<itemConv[]>([]);
+    const [conversation, setConversation] = useState<Message[]>([]);
     const [inputValue, setInputValue] = useState("");
     const [isLoading, setIsLoading] = useState(false);
     const chatEndRef = useRef<HTMLDivElement>(null);
@@ -29,6 +30,8 @@ function Chat() {
 
         const userMessage = inputValue.trim();
         setInputValue("");
+        // Affiche la question utilisateur tout de suite
+        setConversation(prev => [...prev, { role: 'user', content: userMessage }]);
         setIsLoading(true);
 
         // Simuler une réponse de l'IA (à remplacer par votre vraie API)
@@ -51,16 +54,16 @@ function Chat() {
             const data = await response.json();
             const aiResponse = data.message?.content || "Erreur lors de la récupération de la réponse de l'IA.";
 
-            setConversation(prev => [...prev, { user: userMessage, ai: aiResponse }]);
+            setConversation(prev => [...prev, { role: 'ai', content: aiResponse }]);
         } catch (error) {
             console.error("Erreur:", error);
-            setConversation(prev => [...prev, { user: userMessage, ai: "Erreur réseau ou serveur." }]);
+            setConversation(prev => [...prev, { role: 'ai', content: "Erreur réseau ou serveur." }]);
         } finally {
             setIsLoading(false);
         }
     };
 
-    const handleKeyPress = (e: React.KeyboardEvent<HTMLInputElement>) => {
+    const handleKeyPress = (e: KeyboardEvent<HTMLInputElement>) => {
         if (e.key === 'Enter' && !e.shiftKey) {
             e.preventDefault();
             handleSendMessage();
@@ -79,10 +82,11 @@ function Chat() {
                         query={"Lorem ipsum dolor sit amet, do duis nostrud reprehenderit, laborum pariatur tempor elit laborum."}/>
 =======
                     {conversation.map((item, index) => (
-                        <div key={index}>
-                            <UserQuery query={item.user} />
-                            <AIQuery query={item.ai} />
-                        </div>
+                        item.role === 'user' ? (
+                            <UserQuery key={index} query={item.content} />
+                        ) : (
+                            <AIQuery key={index} query={item.content} />
+                        )
                     ))}
                     {isLoading && (
                         <AIQuery query="..." />

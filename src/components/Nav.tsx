@@ -17,7 +17,7 @@ function Nav() {
                 <div id={"linksBar"}>
                     <NavLink to={"/scenarios"}>Scenarios</NavLink>
                     <a href={"https://nird.forge.apps.education.fr/"}>Notre site</a>
-                    <NavLink to={"/contact"}>Nous contacter</NavLink>
+                    <a href={"https://edurl.fr/tchap-demarche-nird"}>Nous contacter</a>
                     <NavLink to={"/admin"}>Connexion</NavLink>
                 </div>
             </div>
