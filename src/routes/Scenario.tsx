@@ -21,7 +21,7 @@ interface JsonScenario {
     content: string;
 }
 
-function Scneario() {
+function Scenario() {
 
     const $scenarios = JsonScenarios as JsonScenario[]
     const $params = useParams()
@@ -100,4 +100,4 @@ function Scneario() {
   )
 }
 
-export default Scneario;
+export default Scenario;
